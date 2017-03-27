@@ -6,21 +6,22 @@
     <title>Document</title>
     <style type="text/css">
 
-      body {
+      html, body {
           margin: 0;
-          /*width: 100%;
-          height: 100%;*/
+          width: 100%;
+          height: 100%;
       }
 
       main {
-          background-color: #A6825F;
           height: 90%;
-          /*border: 1px solid transparent;*/
-          overflow: auto;
+          background-color: #A6825F;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
       }
       
       .author {
-          margin-top: 50%;
+          /*margin-top: 40%;*/
           font-size: 0.8rem;
           display: inline-block;
           color: white;
@@ -35,29 +36,51 @@
           color: white;
       }
 
-      .left-space {
-          margin-left: 10%;
-      }
+      
 
       .label {
           background-color: white;
-          padding: 8px 14px;
+          /*padding: 8px 14px;*/
           display: inline-block;
       }
+
+      .pageIndex {
+          display: inline-block;
+          font-size: 3rem;
+          /*margin-left: 2px;*/
+          border: 1px solid transparent;
+      }
+
+      footer {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+      
+
 
     </style>
 </head>
 <body>
     <main>
         
-        <p class='author left-space uppercase'>Mark Manson</p>
+        <p class='author  uppercase'>Mark Manson</p>
 
-        <p class="title left-space uppercase">The <br>Dark Side<br> of the <br>Digital <br>Nomand</p>
+        <p class="title  uppercase">The <br>Dark Side<br> of the <br>Digital <br>Nomand</p>
 
-        <div class="label left-space uppercase">Travel</div>
+        <div class="label  uppercase">Travel</div>
     </main>
     <footer>
-
+        <a class="uppercase btn centerV ">close</a>
+        
+        
+        <div class="pageIndex">
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+        <img src="comment.png" alt="">
     </footer>
 </body>
 </html>
